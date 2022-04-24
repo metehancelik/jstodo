@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#todoList {
+    height: 50vh;
+    width: 50vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: wheat;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+input {
+    width: 90%;
+    margin: .5rem auto;
+    font-size: 1.125rem;
+    padding: .5rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    padding-left: .5rem;
+    margin: .5rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+ul li input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    width: auto;
+    font-size: 1rem;
+    padding: 3px 1px;
+    cursor: pointer;
+    flex: 1 1 0%;
+}
+
+ul li input:not(:read-only) {
+    background-color: whitesmoke;
+}
+
+.linethrough {
+    text-decoration: line-through;
+}
+
+.edit-btn, .dlt-btn {
+    outline: 1px solid grey;
+    border-radius: 2px;
+    padding: 2px 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: yellow;
+}
+
+.dlt-btn {
+    background-color: red;
+    color: white;
+}
+
+span {
+    display: flex;
+    align-items: center;
+}
